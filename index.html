@@ -39,14 +39,15 @@
         img:hover, h1:hover, p:hover {
             transform: scale(1.05);
         }
-        @media (min-width: 992px) {
-            body {
-                flex-direction: row;
-                text-align: left;
-            }
+        @media (max-width: 768px) {
             img {
-                max-width: 20%;
-                margin-right: 50px;
+                max-width: 50%;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
             }
         }
 
