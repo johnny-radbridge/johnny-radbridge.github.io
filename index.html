@@ -22,7 +22,7 @@
             font-size: 2rem; 
             font-weight: 300;
             margin: 20px 0 10px;
-            color: #00BADE;
+            color: #007C81;
         }
         p {
             font-size: 1rem;
@@ -34,17 +34,29 @@
             max-width: 30%; 
             height: auto;
             margin-bottom: 10px; 
+            transition: transform 0.3s ease-in-out;
         }
-        @media (max-width: 768px) {
+        img:hover, h1:hover, p:hover {
+            transform: scale(1.05);
+        }
+        @media (min-width: 992px) {
+            body {
+                flex-direction: row;
+                text-align: left;
+            }
             img {
-                max-width: 50%;
+                max-width: 20%;
+                margin-right: 50px;
             }
-            h1 {
-                font-size: 1.5rem; 
-            }
-            p {
-                font-size: 0.9rem;
-            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.8rem;
         }
     </style>
 </head>
@@ -52,5 +64,7 @@
     <img src="GSI-Impact-Hub-logo-vertical.png" alt="GSI Impact Hub Logo">
     <h1>Coming Soon!</h1>
     <p>Our website is under construction. Stay tuned for updates.</p>
+    <footer>© 2024 GSI Impact Hub. All rights reserved.</footer>
 </body>
 </html>
+
